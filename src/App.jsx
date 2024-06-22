@@ -4,12 +4,14 @@ import ShowCards from './Components/ShowCards'
 
 function App() {
   const [search,setSearch] = useState('');
-  const [query,setQuery] = useState('chocopollo');
+  const [query,setQuery] = useState('Pizza');
+  const [items, setItems] = useState([]);
   const app_id = '44a1acc9';
   const app_key = 'ba3f747fc1f4b914c8d50c7d1129d2cf';
 
   useEffect(() => {
-    console.log("Searching for ",query)
+    console.log("Searching for",query)
+    getRecipesFunction()
   },[query]);
 
   function updateSearch(e){
@@ -18,8 +20,10 @@ function App() {
   }
 
   const getRecipesFunction = async () => {
-    const response = await fetch( `https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}`); 
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${app_id}&app_key=${app_key}`); 
     const data = await response.json();
+    setItems(data.hits);
+    console.log(data.hits," :v")
   };
 
   function updateItems (e){
@@ -30,7 +34,7 @@ function App() {
   return (
     <>
       <SearchBar search={search} updateSearch={updateSearch} updateItems={updateItems}/>
-      <ShowCards />
+      <ShowCards items={items}/>
     </>
   );
 }
