@@ -34,6 +34,7 @@ function App() {
   return (
     <>
       <SearchBar search={search} updateSearch={updateSearch} updateItems={updateItems}/>
+      <div className='xl:h-28 lg:h-28 md:h-28 sm:h-28 h-32'></div>
       <ShowCards items={items}/>
     </>
   );
