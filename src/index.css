@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.modal-recipe{
+    animation: fade-in .25s ease-in-out; 
+    transition: all 2s ;
+}
+@keyframes fade-in {
+    from{
+        top:0%;
+    } 
+    to {
+        top:8%;
+    }
+}
+
+@keyframes fade-out {
+    from{
+        top:8%;
+    } 
+    to {
+        top:0%;
+    }
+}

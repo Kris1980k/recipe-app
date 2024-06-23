@@ -23,7 +23,7 @@ function App() {
     const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${app_id}&app_key=${app_key}`); 
     const data = await response.json();
     setItems(data.hits);
-    console.log(data.hits," :v")
+    console.log(data.hits)
   };
 
   function updateItems (e){

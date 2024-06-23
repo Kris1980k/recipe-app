@@ -8,6 +8,10 @@ export default {
     extend: {
       width:{
         '128':'32rem'
+      },
+      inset:{
+        'middle':'8% 0%',
+        'middle-black':'0% 0%'
       }
     },
   },
