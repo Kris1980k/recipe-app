@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+*{
+    box-sizing: border-box;
+}
+
 .modal-recipe{
     animation: fade-in .25s ease-in-out; 
     transition: all 2s ;

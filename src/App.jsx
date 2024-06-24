@@ -22,8 +22,12 @@ function App() {
   const getRecipesFunction = async () => {
     const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${app_id}&app_key=${app_key}`); 
     const data = await response.json();
-    setItems(data.hits);
-    console.log(data.hits)
+    const recipes = data.hits;
+    const indexedRecipes = recipes.map(function(e,i){
+      return {...e, index:i}
+    })
+    setItems(indexedRecipes);
+    //console.log(indexedRecipes)
   };
 
   function updateItems (e){
