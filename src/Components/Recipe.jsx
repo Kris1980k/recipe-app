@@ -57,7 +57,7 @@ function Recipe({closeModal,recipeName,healthLabels,imageUrl,ingredients,quantit
                                     ingredients.map((i,j)=>{
                                         return(
                                             <li>
-                                                Step ...
+                                                Step ...        
                                             </li>                                                                                
                                         )
                                     })
