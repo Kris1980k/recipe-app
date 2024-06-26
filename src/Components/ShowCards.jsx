@@ -28,7 +28,7 @@ function ShowCards({items}) {
 
         setIngredients([...ingredients,...ingredientList])
         setQuantities([...quantities, ...quantitiesList])
-        //console.log(obj.ingredients)
+        console.log(obj)
 
         if (modalC.contains("hidden")){
             modalC.replace("hidden","block");

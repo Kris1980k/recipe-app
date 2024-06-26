@@ -10,7 +10,7 @@ export default {
         '128':'32rem'
       },
       inset:{
-        'middle':'8% 0%',
+        'middle':'10% 3%',
         'middle-black':'0% 0%'
       }
     },
