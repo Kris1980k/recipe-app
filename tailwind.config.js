@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       width:{
-        '128':'32rem'
+        '82':'22.5rem',
+        '128':'32rem'        
       },
       inset:{
         'middle':'10% 4%',
