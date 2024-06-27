@@ -11,20 +11,28 @@
     animation: fade-in .25s ease-in-out; 
     transition: all 2s ;
 }
+
+.animated-img{
+    animation: grown .25s ease-in-out;
+    transition: all 2s;
+}
 @keyframes fade-in {
     from{
         top:0%;
+        bottom: 100%;
     } 
     to {
-        top:8%;
+        top:10%;
+        bottom: 10%;
+        left: 4%;
     }
 }
 
-@keyframes fade-out {
+@keyframes grown {
     from{
-        top:8%;
+        height: 0;
     } 
     to {
-        top:0%;
+        height:100%;
     }
 }
