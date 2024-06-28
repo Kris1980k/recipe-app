@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       width:{
-        '82':'22.5rem',
+        '82':'21.5rem',
         '128':'32rem'        
       },
       inset:{
