@@ -54,7 +54,7 @@ function Recipe({closeModal,recipeName,healthLabels,imageUrl,ingredients,quantit
                     <div className='steps xl:w-9/12 lg:w-9/12 md:w-9/12 w-11/12 lg:h-32 float-right xl:block lg:block md:block sm:block xl:relative xl:ml-0 lg:absolute md:absolute sm:absolute xl:bottom-0 xl:left-0 xl:top-0 lg:left-80 lg:top-1/4 lg:ml-4 md:bottom-0 md:left-80 md:top-1/4 md:h-80 sm:bottom-0 sm:left-60 sm:top-32'>
                         <h1 className='xl:text-2xl font-bold w-full'>Steps</h1>
                         <div className='block w-full'>
-                            <ol className='list-decimal block xl:pl-10 lg:pl-10 md:pl-10 sm:pl-10 pl-0 xl:h-96 lg:h-80 md:h-80 sm:h-80 overflow-auto w-full'>
+                            <ol className='list-decimal block xl:pl-10 lg:pl-10 md:pl-10 sm:pl-10 pl-10 xl:h-96 lg:h-80 md:h-80 sm:h-80 h-52 overflow-auto w-full'>
                                 {
                                     ingredients.map((i,j)=>{
                                         return(
