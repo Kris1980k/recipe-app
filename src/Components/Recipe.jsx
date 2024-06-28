@@ -34,7 +34,7 @@ function Recipe({closeModal,recipeName,healthLabels,imageUrl,ingredients,quantit
                     </div>
                 </div>
                 <div className='bottom xl:w-full lg:w-full md:w-full sm:w-full xl:block lg:block md:block sm:block xl:h-80 h-96 xl:mt-0 mt-10 w-full '>
-                    <div className='ingredients-contianer xl:absolute lg:absolute md:absolute sm:absolute inline-block xl:w-80 lg:w-80 md:w-80 sm:w-60 w-82 xl:h-72 lg:h-72 md:h-72 sm:h-72 h-44 xl:bottom-2 lg:bottom-2 md:bottom-2 sm:bottom-2 xl:top-72 lg:top-60 md:top-60 sm:top-60 xl:left-2 lg:left-2 md:left-2 sm:left-2  overflow-y-auto overflow-x-auto '>
+                    <div className='ingredients-contianer xl:absolute lg:absolute md:absolute sm:absolute inline-block xl:w-80 lg:w-80 md:w-80 sm:w-60 w-82 xl:h-64 lg:h-72 md:h-72 sm:h-72 h-44 xl:bottom-2 lg:bottom-2 md:bottom-2 sm:bottom-2 xl:top-72 lg:top-60 md:top-60 sm:top-60 xl:left-2 lg:left-2 md:left-2 sm:left-2  overflow-y-auto overflow-x-auto'>
                         <div className='bg-emerald-700 xl:w-80 lg:w-80 md:w-80 sm:w-60 w-82 h-8 fixed'>
                             <h1 className='xl:text-xl lg:text-xl md:text-xl sm:text-xl text-xl'>Ingredients</h1>
                         </div>
